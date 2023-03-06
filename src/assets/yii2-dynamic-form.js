@@ -1,5 +1,6 @@
 /**
  * Fork yii2-dynamic-form Wanderson Bragança
+ * v1.0.6
  */
 function initTemplate(widgetOptions, template) {
     var yiiActiveFormData = $('#' + widgetOptions.formId).yiiActiveForm('data');
@@ -253,7 +254,9 @@ function initTemplate(widgetOptions, template) {
 
                     widgetsOptions = widgetsOptions.reverse();
                     for (var i = identifiers.length - 1; i >= 1; i--) {
-                        identifiers[i] = $elem.closest(widgetsOptions[i].widgetItem).index();
+                        if (typeof widgetsOptions[i] !== 'undefined') {
+                            identifiers[i] = $elem.closest(widgetsOptions[i].widgetItem).index();
+                        }
                     }
                 }
 
