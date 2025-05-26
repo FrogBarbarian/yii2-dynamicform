@@ -25,8 +25,8 @@
         }
     ],
     "require": {
-        "ext-mbstring": "*",
         "ext-dom": "*",
+        "ext-mbstring": "*",
         "yiisoft/yii2": "~2.0.52",
         "symfony/css-selector": "7.2.0",
         "symfony/dom-crawler": "7.2.4"
