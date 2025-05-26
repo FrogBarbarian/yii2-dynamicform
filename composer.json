@@ -1,5 +1,5 @@
 {
-    "name": "evgenidev/yii2-dynamicform",
+    "name": "frogbarbarian/yii2-dynamicform",
     "description": "It is widget to yii2 framework to clone form elements in a nested manner, maintaining accessibility.",
     "keywords": [
         "wbraganca",
@@ -25,6 +25,7 @@
         }
     ],
     "require": {
+        "ext-mbstring": "*",
         "ext-dom": "*",
         "yiisoft/yii2": "~2.0.52",
         "symfony/css-selector": "7.2.0",
